@@ -1,0 +1,18 @@
+<h1>タスク詳細</h1>
+  <p>
+  タイトル：<br>
+  <%=  form.string_field: name %>
+  </p>
+  <p>
+  本文 :<br>
+  <%=  form.text_field:  %>
+  </p>
+  <p>
+  期限: <br>
+  <%=  form.integer_field: %>
+  </p>
+  <p>
+    <%= link_to "戻る" ,task_path(task)  %>
+    <%= link_to "編集" , edit_path(task) %>
+    <%= link_to "削除" , task_path(task) , method :delete , data:{comfirm::'削除して良いのか？'} %>
+  </p>
