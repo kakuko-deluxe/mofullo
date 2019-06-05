@@ -5,11 +5,11 @@
   </p>
   <p>
   本文 :<br>
-  <%=  form.text_field: @task.body %>
+  <%= @task.body %>
   </p>
   <p>
   期限: <br>
-  <%=  form.integer_field: @task.due_date%>
+  <%= @task.due_date %>
   </p>
   <p>
     <%= link_to "戻る" ,task_path(@task)  %>
